@@ -1,4 +1,4 @@
-cdimport 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 class InwardTopNotchClipper extends CustomClipper<Path> {
   final double notchWidth;
