@@ -1,7 +1,10 @@
 name: notch_bottom_navigation
 description: "A new Flutter package project."
 version: 0.0.1
-# homepage:
+homepage: https://github.com/mashoodpangat/notch_bottom_navigation_repo
+repository: https://github.com/mashoodpangat/notch_bottom_navigation_repo
+issue_tracker: https://github.com/mashoodpangat/notch_bottom_navigation_repo/issues
+
 
 environment:
   sdk: ^3.8.1

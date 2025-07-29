@@ -1,39 +1,73 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+notch_bottom_navigation
+A customizable bottom navigation bar with an elegant inward notch and a floating action button (FAB) for Flutter.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+Features
+* Modern inward-notch design with smooth curves.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+* Center Floating Action Button (FAB) with customizable color and icon.
 
-## Features
+* Supports multiple pages and icons.
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+* Active tab indicator dot.
 
-## Getting started
+* Configurable selected and unselected colors.
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+* Easy to integrate with any app.
 
-## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Getting Started
+Add this to your pubspec.yaml:
 
-```dart
-const like = 'sample';
-```
+dependencies:
+  notch_bottom_navigation: ^0.0.1
 
-## Additional information
+Or run:
+flutter pub add notch_bottom_navigation
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Usage
+
+import 'package:flutter/material.dart';
+import 'package:notch_bottom_navigation/notch_bottom_navigation.dart';
+
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Notch Bottom Navigation Demo',
+      home: CustomNotchBottomNavigation(
+        pages: const [
+          Scaffold(body: Center(child: Text('Home'))),
+          Scaffold(body: Center(child: Text('Search'))),
+          Scaffold(body: Center(child: Text('Notifications'))),
+          Scaffold(body: Center(child: Text('Settings'))),
+        ],
+        icons: const [
+          Icons.home,
+          Icons.search,
+          Icons.notifications,
+          Icons.settings,
+        ],
+        fabIcon: Icons.add,
+        fabColor: Colors.deepPurple,
+        selectedColor: Colors.deepPurple,
+        unselectedColor: Colors.grey,
+        onFabTap: () => debugPrint('FAB tapped'),
+      ),
+    );
+  }
+}
+
+Additional Information
+Found a bug? Please open an issue here: GitHub Issues
+
+Want to contribute? Pull requests are welcome!
+
+License
+This project is licensed under the MIT License.
+
+

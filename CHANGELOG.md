@@ -1,3 +1,2 @@
 ## 0.0.1
-
-* TODO: Describe initial release.
+- Initial release with configurable icons, FAB, and inward-notch bar.
