@@ -1,10 +1,17 @@
 name: notch_bottom_navigation
-description: "A new Flutter package project."
+description: A customizable bottom navigation bar with an inward notch and center FAB for Flutter. Configurable icons, colors, and pages.
 version: 0.0.1
 homepage: https://github.com/mashoodpangat/notch_bottom_navigation_repo
 repository: https://github.com/mashoodpangat/notch_bottom_navigation_repo
 issue_tracker: https://github.com/mashoodpangat/notch_bottom_navigation_repo/issues
 
+
+topics:
+  - navigation
+  - bottom-navigation
+  - custom
+  - widgets
+  - design
 
 environment:
   sdk: ^3.8.1
