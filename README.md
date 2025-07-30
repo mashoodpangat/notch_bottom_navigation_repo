@@ -1,31 +1,47 @@
-notch_bottom_navigation
+# Notch Bottom Navigation Bar
+
 A customizable bottom navigation bar with an elegant inward notch and a floating action button (FAB) for Flutter.
 
+---
 
-Features
-* Modern inward-notch design with smooth curves.
+## ✨ Features
 
-* Center Floating Action Button (FAB) with customizable color and icon.
+- 🕳️ Modern inward-notch design with smooth curves  
+- ➕ Center Floating Action Button (FAB) with customizable color and icon  
+- 📱 Supports multiple pages and icons  
+- 🔵 Active tab indicator dot  
+- 🎨 Configurable selected and unselected colors  
+- 🔧 Easy to integrate with any app  
 
-* Supports multiple pages and icons.
+---
 
-* Active tab indicator dot.
+## 🚀 Getting Started
 
-* Configurable selected and unselected colors.
+Add the package to your `pubspec.yaml`:
 
-* Easy to integrate with any app.
-
-
-Getting Started
-Add this to your pubspec.yaml:
-
+```yaml
 dependencies:
   notch_bottom_navigation: ^0.0.1
+```
 
-Or run:
+Then, run the following command in your terminal:
+
+```bash
+flutter pub get
+
+```
+
+Or directly add the package using:
+
+```bash
 flutter pub add notch_bottom_navigation
+```
 
-Usage
+## 📦 Usage
+
+```dart
+
+Import the package and use CustomNotchBottomNavigation in your app:
 
 import 'package:flutter/material.dart';
 import 'package:notch_bottom_navigation/notch_bottom_navigation.dart';
@@ -62,12 +78,43 @@ class MyApp extends StatelessWidget {
   }
 }
 
-Additional Information
-Found a bug? Please open an issue here: GitHub Issues
+```
 
-Want to contribute? Pull requests are welcome!
+## ⚙️ Customization Options
 
-License
-This project is licensed under the MIT License.
+| Parameter         | Description                         |
+| ----------------- | ----------------------------------- |
+| `pages`           | List of widgets for each tab        |
+| `icons`           | List of icons for each tab          |
+| `fabIcon`         | Icon for the floating action button |
+| `fabColor`        | Color of the FAB                    |
+| `selectedColor`   | Color of the selected tab icon      |
+| `unselectedColor` | Color of the unselected tab icons   |
+| `onFabTap`        | Callback when FAB is tapped         |
+
+
+---
+
+📬 Additional Information
+
+❗ Found a bug? Please open an issue on GitHub Issues
+
+🤝 Want to contribute? Pull requests are welcome!
+
+
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🧑‍💻 Author
+
+Made with ❤️ by [YourName]  
+GitHub: [github.com/yourusername](https://github.com/mashoodpangat)
+
 
 
